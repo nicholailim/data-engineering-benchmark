@@ -1,0 +1,16 @@
+Table 9 - indicative annual operational emissions
+                                                Scenario  Electricity (kWh/year)  Factor (kg CO2e/kWh)  Emissions (kg CO2e/year) Reduction vs laptops
+                            Local laptops (Philippines)                    1037                 0.691                       716                    -
+Cloud (assumed), Philippine factor (conservative bound)                     346                 0.691                       239                  67%
+                 Cloud (assumed), Singapore grid factor                     346                 0.402                       139                  81%
+        Cloud (assumed), Google regional grid intensity                     346                 0.367                       127                  82%
+
+Local electricity: 1,036.8 kWh/year; assumed cloud use is 33% of it.
+Cloud electricity would have to be about 5.2 times the assumed value (about 1,782 kWh/year) before cloud emissions match the laptops at the Singapore factor.
+
+Bottom-up Dataflow electricity: 37 kWh/year at 50% utilisation (22-51 kWh/year for 0-100%).
+The planning assumption is 9 times the central estimate.
+  Philippine factor: 25 kg CO2e/year -> reduction 96.5%
+  Singapore factor: 15 kg CO2e/year -> reduction 97.9%
+
+Saved outputs/table9_emissions.csv

@@ -1,0 +1,26 @@
+Baseline reproduces the published results.
+
+Table 7 - break-even month / 36-month net saving (USD)
+                            Case       AWS Glue      Azure ADF GCP Dataflow
+                       Baseline     14 / 6,517  none / -8,318  11 / 10,605
+           Lost productivity 0%  none / -2,178 none / -17,013   25 / 1,910
+          Lost productivity 50%     23 / 2,170 none / -12,665   15 / 6,258
+         Lost productivity 150%    10 / 10,864  none / -3,971   8 / 14,952
+      ADF Data Flow at 4 vCores     14 / 6,517  none / -1,101  11 / 10,605
+Glue Flex pricing ($0.29/DPU-h)     12 / 8,536  none / -8,318  11 / 10,605
+            Job duration 15 min     12 / 9,479  none / -1,101  10 / 11,772
+            Job duration 60 min       30 / 593 none / -22,751   12 / 8,271
+           Job duration 120 min none / -11,256 none / -51,618   18 / 3,603
+    Exchange rate PHP 63.28/USD     16 / 5,336  none / -9,499   11 / 9,424
+            Migration cost +50%     21 / 4,417 none / -10,318   16 / 8,555
+           Migration cost +100%     28 / 2,317 none / -12,318   21 / 6,505
+
+Lost productivity (as share of the assumed value) at which the 36-month net saving reaches zero:
+  AWS Glue     0.25
+  Azure ADF    1.96
+
+Dataflow monthly cost at which the 36-month net saving reaches zero (usage cost scaled, secondary costs fixed):
+  lost productivity 100%: about $302 per month (4.7 times the modeled $63.58)
+  lost productivity 0%: about $106 per month (1.7 times the modeled $63.58)
+
+Saved outputs/table7_cost_sensitivity.csv

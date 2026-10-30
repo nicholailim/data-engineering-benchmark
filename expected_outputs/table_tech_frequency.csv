@@ -1,0 +1,37 @@
+Technology,Count,Percentage,Category
+Python,158,84.9,Languages
+SQL,155,83.3,Languages
+Apache Spark,105,56.5,Processing
+AWS,86,46.2,Cloud
+Machine Learning,62,33.3,Modern/AI
+GCP,61,32.8,Cloud
+Azure,57,30.6,Cloud
+Scala,55,29.6,Languages
+Databricks,54,29.0,Processing
+Snowflake,51,27.4,Data Warehouses
+Apache Airflow,50,26.9,Orchestration
+CI/CD,46,24.7,DevOps
+Java,45,24.2,Languages
+Redshift,44,23.7,Data Warehouses
+Apache Kafka,43,23.1,Processing
+Apache Hadoop,39,21.0,Processing
+Tableau,31,16.7,BI/Viz
+BigQuery,30,16.1,Data Warehouses
+Kubernetes,27,14.5,DevOps
+Power BI,27,14.5,BI/Viz
+Serverless,27,14.5,Modern/AI
+dbt,27,14.5,ETL Tools
+PostgreSQL,22,11.8,Data Warehouses
+Apache Flink,21,11.3,Processing
+Azure Data Factory,20,10.8,ETL Tools
+Docker,20,10.8,DevOps
+AWS Glue,18,9.7,ETL Tools
+Bash/Shell,14,7.5,Languages
+Looker,14,7.5,BI/Viz
+Terraform,14,7.5,DevOps
+GCP Dataflow,13,7.0,ETL Tools
+Informatica,11,5.9,ETL Tools
+Fivetran,7,3.8,ETL Tools
+Talend,5,2.7,ETL Tools
+Prefect,3,1.6,Orchestration
+Dagster,2,1.1,Orchestration

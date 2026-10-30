@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper."
+title: "Code for: Benchmarking Data Engineering Technology Adoption and Cloud Migration Feasibility: A Data-Driven Case Study"
+authors:
+  - family-names: Lim
+    given-names: "Nicholai Matthew E."
+    affiliation: "Mapúa University, Makati, Philippines"
+  - family-names: Tomas
+    given-names: "John Paul Q."
+    affiliation: "Mapúa University, Makati, Philippines"
+license: MIT
+keywords:
+  - data engineering
+  - cloud migration
+  - cost modeling
+  - job-posting analysis

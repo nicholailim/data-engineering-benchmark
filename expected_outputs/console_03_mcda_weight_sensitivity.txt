@@ -1,0 +1,32 @@
+
+Table 6 - weighted scores under alternative weight sets
+         Weight set    Weights (%)  AWS Glue  Azure ADF  GCP Dataflow          Top
+          Baseline 30/20/25/15/10      3.65       3.40          4.00 GCP Dataflow
+     Equal weights 20/20/20/20/20      3.60       3.40          4.00 GCP Dataflow
+          Cost-led 50/15/15/10/10      3.80       3.30          4.35 GCP Dataflow
+      Delivery-led 15/20/40/15/10      3.50       3.55          3.70 GCP Dataflow
+       Risk-averse 20/15/25/30/10      3.30       3.20          3.75 GCP Dataflow
+Sustainability-led 20/15/20/10/35      3.75       3.60          4.25 GCP Dataflow
+ No sustainability  33/22/28/17/0      3.60       3.33          3.88 GCP Dataflow
+
++/-10-point changes: GCP Dataflow first in 10 of 10
+
+Leader as one weight is raised (others rescaled proportionally):
+  Cost            [(0.0, 'Azure ADF'), (0.001, 'GCP Dataflow')]
+  Scalability     [(0.0, 'GCP Dataflow'), (0.408, 'AWS Glue')]
+  Complexity      [(0.0, 'GCP Dataflow'), (0.532, 'Azure ADF')]
+  Lock-in         [(0.0, 'GCP Dataflow')]
+  Sustainability  [(0.0, 'GCP Dataflow')]
+
+flat Dirichlet(1): share of 100,000 draws in which each platform ranks first
+   {'AWS Glue': 11.1, 'Azure ADF': 6.8, 'GCP Dataflow': 82.1}
+
+Dirichlet centred on baseline, concentration 20: share of 100,000 draws in which each platform ranks first
+   {'AWS Glue': 2.8, 'Azure ADF': 0.8, 'GCP Dataflow': 96.4}
+
+Dirichlet centred on baseline, concentration 10: share of 100,000 draws in which each platform ranks first
+   {'AWS Glue': 7.6, 'Azure ADF': 3.9, 'GCP Dataflow': 88.5}
+
++/-1 score changes: GCP Dataflow first in 27 of 27 feasible changes
+
+Saved outputs/table6_weight_sets.csv

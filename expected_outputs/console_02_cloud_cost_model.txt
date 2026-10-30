@@ -1,0 +1,142 @@
+======================================================================
+ANALYSIS 1A: PRIMARY COSTS ONLY (Monthly USD)
+======================================================================
+         Scenario  On-Premise  AWS Glue  Azure ADF  GCP Dataflow
+     Low (250 GB)      474.99     69.82     237.95         28.64
+Baseline (500 GB)      474.99    137.14     473.90         54.98
+      High (1 TB)      522.49    271.78     945.80        107.67
+
+======================================================================
+ANALYSIS 1B: REVISED COSTS (Primary + Secondary, Monthly USD)
+======================================================================
+         Scenario  On-Premise  AWS Glue  Azure ADF  GCP Dataflow
+     Low (250 GB)      474.99     86.82     252.65         37.24
+Baseline (500 GB)      474.99    154.14     488.60         63.58
+      High (1 TB)      522.49    288.78     960.50        116.27
+
+Secondary cost breakdown per platform (monthly USD):
+  AWS Glue       : $17.00/month
+    monitoring  : $4.00
+    network     : $9.00
+    security    : $4.00
+  Azure ADF      : $14.70/month
+    monitoring  : $3.00
+    network     : $8.70
+    security    : $3.00
+  GCP Dataflow   : $8.60/month
+    network     : $8.00
+    security    : $0.60
+
+Platform ranking (revised costs, cheapest → most expensive):
+  Low (250 GB)          : GCP Dataflow < AWS Glue < Azure ADF
+  Baseline (500 GB)     : GCP Dataflow < AWS Glue < Azure ADF
+  High (1 TB)           : GCP Dataflow < AWS Glue < Azure ADF
+
+  *** FINDING: Ranking CONSISTENT — recommendation is robust to workload variation.
+
+Revised monthly savings vs on-premise (baseline):
+  AWS Glue       : $ 320.85/month saved (67.5%)
+  Azure ADF      : $  13.61/month MORE expensive (2.9%)
+  GCP Dataflow   : $ 411.41/month saved (86.6%)
+
+Figure 7 saved.
+
+======================================================================
+ANALYSIS 2: 3-YEAR TCO PROJECTION
+(Revised monthly costs + 20% annual data growth)
+======================================================================
+
+Full migration cost (one-time + staging):
+  AWS Glue       : $4,365  (one-time: $4,200 + staging: $165)
+  Azure ADF      : $4,569  (one-time: $4,000 + staging: $569)
+  GCP Dataflow   : $4,166  (one-time: $4,100 + staging: $66)
+
+Cumulative 3-Year TCO (revised model):
+  On-Premise     : $  17,464  (₱ 1,030,402)
+  AWS Glue       : $  10,948  (₱   645,911)
+  Azure ADF      : $  25,783  (₱ 1,521,169)
+  GCP Dataflow   : $   6,859  (₱   404,710)
+Figure 8 saved.
+
+======================================================================
+ANALYSIS 3: BREAK-EVEN ANALYSIS (Revised Model)
+======================================================================
+  AWS Glue       : break-even month 14  |  3-yr net saving: $   6,517  (₱   384,491)
+  Azure ADF      : no break-even within 36 months  |  3-yr net LOSS: $   8,318  (₱   490,767)
+  GCP Dataflow   : break-even month 11  |  3-yr net saving: $  10,605  (₱   625,692)
+
+Comparison: Original vs Revised break-even:
+  Platform        Original   Revised    Difference
+  --------------------------------------------------
+  AWS Glue               9        14   +5 months
+  Azure ADF            N/A       N/A   —
+  GCP Dataflow           6        11   +5 months
+
+======================================================================
+ANALYSIS 4: WEIGHTED MULTI-CRITERIA SCORING MATRIX
+======================================================================
+
+  Criterion                  Weight   AWS Glue  Azure ADF        GCP
+  --------------------------------------------------------------
+  Cost Efficiency              30%          4          3          5
+  Scalability                  20%          5          4          4
+  Migration Complexity         25%          3          4          3
+  Vendor Lock-in Risk          15%          2          2          3
+  Sustainability               10%          4          4          5
+
+  WEIGHTED TOTAL                         3.650      3.400      4.000
+
+  RECOMMENDED: GCP Dataflow (score: 4.000 / 5.000)
+Figure 9 saved.
+
+======================================================================
+ANALYSIS 5: SENSITIVITY ANALYSIS — REVISED MODEL
+======================================================================
+
+  Annual ROI (%) — revised costs, by workload multiplier:
+  Platform        50% vol  75% vol  100% vol  125% vol  150% vol
+  --------------------------------------------------------------------
+  AWS Glue             6.7%      -2.5%     -11.8%     -17.8%     -23.8%
+  Azure ADF          -41.6%     -72.6%    -103.6%    -131.4%    -159.3%
+  GCP Dataflow        26.1%      22.3%      18.5%      18.1%      17.8%
+
+  GCP Dataflow ROI positive at all volume levels: YES — robust recommendation
+Figure 10 saved.
+
+======================================================================
+KEY NUMBERS FOR CHAPTER 4.2 (REVISED MODEL)
+======================================================================
+
+AWS Glue
+  Primary monthly cost         : $137.14
+  Secondary monthly cost       : $17.00
+  Revised monthly cost         : $154.14
+  Monthly saving vs on-premise : $320.85 (67.5%)
+  Full migration cost          : $4,365 (₱257,510)
+  Break-even month             : 14
+  3-year net saving (USD)      : $6,517
+  3-year net saving (PHP)      : ₱384,491
+
+Azure ADF
+  Primary monthly cost         : $473.90
+  Secondary monthly cost       : $14.70
+  Revised monthly cost         : $488.60
+  Monthly saving vs on-premise : $-13.61 (-2.9%)
+  Full migration cost          : $4,569 (₱269,552)
+  Break-even month             : No break-even
+  3-year net saving (USD)      : $-8,318
+  3-year net saving (PHP)      : ₱-490,767
+
+GCP Dataflow
+  Primary monthly cost         : $54.98
+  Secondary monthly cost       : $8.60
+  Revised monthly cost         : $63.58
+  Monthly saving vs on-premise : $411.41 (86.6%)
+  Full migration cost          : $4,166 (₱245,793)
+  Break-even month             : 11
+  3-year net saving (USD)      : $10,605
+  3-year net saving (PHP)      : ₱625,692
+
+======================================================================
+WEEK 2 COMPLETE — Figures 7–10 and 4 tables saved.
+======================================================================

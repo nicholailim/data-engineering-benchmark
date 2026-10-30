@@ -1,0 +1,4 @@
+Scenario,On-Premise,AWS Glue,Azure ADF,GCP Dataflow
+Low (250 GB),474.99,86.82,252.65,37.24
+Baseline (500 GB),474.99,154.14,488.6,63.58
+High (1 TB),522.49,288.78,960.5,116.27

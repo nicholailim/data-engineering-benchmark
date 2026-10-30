@@ -1,0 +1,5 @@
+Scenario,Electricity (kWh/year),Factor (kg CO2e/kWh),Emissions (kg CO2e/year),Reduction vs laptops
+Local laptops (Philippines),1037,0.691,716,-
+"Cloud (assumed), Philippine factor (conservative bound)",346,0.691,239,67%
+"Cloud (assumed), Singapore grid factor",346,0.402,139,81%
+"Cloud (assumed), Google regional grid intensity",346,0.367,127,82%

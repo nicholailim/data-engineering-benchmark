@@ -1,0 +1,32 @@
+Technology,Category,Global Rank,Global Adoption (%),Company X,Status
+Python,Languages,1,84.9,In Use,In Use
+SQL,Languages,2,83.3,In Use,In Use
+Apache Spark,Processing,3,56.5,Not in Use,Gap
+AWS,Cloud,4,46.2,Not in Use,Gap
+Machine Learning,Modern/AI,5,33.3,Not in Use,Gap
+GCP,Cloud,6,32.8,Not in Use,Gap
+Azure,Cloud,7,30.6,Not in Use,Gap
+Scala,Languages,8,29.6,Not in Use,Gap
+Databricks,Processing,9,29.0,Not in Use,Gap
+Snowflake,Data Warehouses,10,27.4,Not in Use,Gap
+Apache Airflow,Orchestration,11,26.9,Not in Use,Gap
+CI/CD,DevOps,12,24.7,Not in Use,Gap
+Java,Languages,13,24.2,Not in Use,Gap
+Redshift,Data Warehouses,14,23.7,Not in Use,Gap
+Apache Kafka,Processing,15,23.1,Not in Use,Gap
+Apache Hadoop,Processing,16,21.0,Not in Use,Gap
+Tableau,BI/Viz,17,16.7,In Use,In Use
+BigQuery,Data Warehouses,18,16.1,Not in Use,Low Priority
+Kubernetes,DevOps,19,14.5,Not in Use,Low Priority
+Power BI,BI/Viz,20,14.5,In Use,In Use
+Serverless,Modern/AI,21,14.5,Not in Use,Low Priority
+dbt,ETL Tools,22,14.5,Not in Use,Low Priority
+PostgreSQL,Data Warehouses,23,11.8,Not in Use,Low Priority
+Azure Data Factory,ETL Tools,25,10.8,Not in Use,Low Priority
+Docker,DevOps,26,10.8,Not in Use,Low Priority
+AWS Glue,ETL Tools,27,9.7,Not in Use,Low Priority
+Looker,BI/Viz,29,7.5,Not in Use,Low Priority
+Terraform,DevOps,30,7.5,Not in Use,Low Priority
+GCP Dataflow,ETL Tools,31,7.0,Not in Use,Low Priority
+Informatica,ETL Tools,32,5.9,Not in Use,Low Priority
+Talend,ETL Tools,34,2.7,Not in Use,Low Priority
